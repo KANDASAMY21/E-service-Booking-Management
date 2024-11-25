@@ -1,0 +1,539 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-container{
+  height: 80vh;
+  margin: 25px;
+}
+
+.mid-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 75px;
+}
+
+.features{
+  background: gray;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.feature-img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: rotate(-25deg);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-img:hover{
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+  margin-left: 0px;
+}
+
+.welcome{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+  background: #f9f9f9;
+  color: #090909;
+  border-radius: 25px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #090909;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.req-container {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.req-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.req-form h2 {
+  font-size: 2em;
+  font-weight: 600;
+  background: url("./assets/blacky.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.req-btn {
+  padding: 15px 65px;
+  background: #090909;
+  color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.req-btn:hover {
+  background: #1a1a1a;
+}
+
+/* Shared style for input and select */
+input, select {
+  padding: 5px 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #090909;
+  box-shadow: 0 0 5px rgba(9, 9, 9, 0.5);
+}
+
+/* Ensure the date input matches the size of other inputs */
+input[type="date"] {
+  padding: 5px 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: #090909;
+  box-shadow: 0 0 5px rgba(9, 9, 9, 0.5);
+}
+
+
+.booked{
+  width: 75%;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+span{
+  font-size: 1.2em;
+  color: cadetblue;
+}
+
+.plumb-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  
+}
+
+.plumb-div2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plumb-div2 a{
+  margin-left: 100px;
+  background: #090909;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.plumb{
+  width: 200px;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: black;
+  width: 100vw;
+  height: 85vh;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #090909;
+  margin-bottom: 40px;
+}
+
+.login-container{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 5px;
+ border: 2px solid black;
+ padding: 100px 75px;
+}
+
+.login h2{
+  font-size: 3em;
+  font-weight: bold;
+  background: url("./assets/blacky.jpeg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+
+}
+
+
+.login-btn{
+  padding: 10px 75px;
+ background: #090909;
+  color: #f9f9f9;
+  font-size: 1.rem;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.login-btn:hover{
+  scale: 1.05;
+  background: #f9f9f9;
+  color: #090909;
+  transition: all 0.3s ease;
+}
+
+.error{
+  color: tomato;
+  font-size: 1rem;
+}
+
+.suc-container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.suc-container h2{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.user{
+  font-size: 2em;
+  background: url("./assets/blacky.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mech{
+  width: 50px;
+  margin-top: 25px;
+}
+
+.pointer{
+  width: 20px;
+  margin-top: 15px;
+  animation: animate 1s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes animate{
+  0%{
+      transform: translateY(0%);
+  }
+ 100%{
+  transform: translateY(30%);
+ }
+}
+
+.worker-container{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin: 25px 50px;
+}
+
+.worker{
+  display: flex;
+  box-shadow: 2px 2px 2px 5px hsl(0, 0%, 0%,0.1);
+  padding-right: 100px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+.worker-img{
+ width: 175px;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+.worker-details{
+  margin: 0px 15px;
+}
+
+.book{
+  margin: 50px 10px;
+  background: #090909;
+  color: #f9f9f9;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+strong{
+  font-size: 1em;
+  font-weight: 500;
+  color: navy;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  transition: all 0.3s ease;
+}
+
+footer p {
+  font-size: 14px;
+}
+.grayout{
+  filter: grayscale(1);
+}
+
+.contact-container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-img{
+  width: 30px;
+  margin-left: 15px;
+}
+
+.feed-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.feed-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-box{
+  padding: 100px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.feed-btn{
+  padding: 10px 165px;
+  background: #090909;
+  color: #f9f9f9;
+  font-size: 1.rem;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.feed-btn:hover{
+  scale: 1.05;
+  background: #f9f9f9;
+  color: #090909;
+  transition: all 0.3s ease;
+}
+
+i{
+  font-size: 1.5em;
+  background: linear-gradient(#e66465, #9198e5);
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rate-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.rate-form input{
+  width: 50px;
+  border-radius: 25px;
+}
+
+.show-rate{
+  margin-left:0px ;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+footer:hover{
+ opacity: 0.5;
+ transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  header {
+      padding: 15px 0;
+  }
+
+  header h1 {
+      font-size: 20px;
+  }
+
+  nav ul li a {
+      font-size: 14px;
+  }
+
+  .hero h2 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  footer p {
+      font-size: 12px;
+  }
+}
+
+.feed-to{
+  width: 365px;
+  margin-top: 25px;
+}
+
+.def-btn{
+  background: #090909;
+  padding: 15px 40px;
+  margin-left: 50px;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
